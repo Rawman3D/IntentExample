@@ -29,9 +29,7 @@ public class bacon_activity extends AppCompatActivity {
 
     public void callApple(View view){
         // Intent code to launch a new activity.
+        finish();
 
-        Intent i = new Intent(this, MainActivity.class);
-
-        startActivity(i);
     }
 }
