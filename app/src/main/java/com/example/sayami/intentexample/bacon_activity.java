@@ -28,8 +28,16 @@ public class bacon_activity extends AppCompatActivity {
     }
 
     public void callApple(View view){
-        // Intent code to launch a new activity.
+        // Intent code to go back to the previous activity.
         finish();
 
     }
+
+    public void sendBroadCast(View view){
+         Intent in= new Intent();
+        in.setAction("RamensBroadcast");
+        in.setFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
+        sendBroadCast(in);
+    }
+
 }

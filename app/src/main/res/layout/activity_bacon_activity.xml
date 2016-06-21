@@ -35,5 +35,6 @@
         android:text="Send broadcast"
         android:id="@+id/sendBroad"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="sendBroadCast" />
 </RelativeLayout>
