@@ -37,7 +37,7 @@ public class bacon_activity extends AppCompatActivity {
          Intent in= new Intent();
         in.setAction("RamensBroadcast");
         in.setFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
-        sendBroadCast(in);
+        sendBroadcast(in);
     }
 
 }

@@ -17,24 +17,52 @@
         android:text="Apple"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="96dp" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go to bacon"
         android:id="@+id/baconButton"
-        android:layout_centerVertical="true"
+        android:onClick="openBacon"
+        android:layout_below="@+id/ApplesInput"
         android:layout_centerHorizontal="true"
-        android:onClick="openBacon"/>
+        android:layout_marginTop="35dp" />
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/ApplesInput"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/phNum"
+        android:layout_below="@+id/baconButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="61dp" />
+        android:layout_marginTop="107dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Make Calls From Here:"
+        android:id="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:id="@+id/callButton"
+        android:layout_below="@+id/phNum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:onClick="launchCall" />
 
 </RelativeLayout>
