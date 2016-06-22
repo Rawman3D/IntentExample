@@ -34,19 +34,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void launchCall(View view){
 
-        int i = Log.i("TAG", "CHiryo");
+
 
         TextView phoneNumber = (TextView) findViewById(R.id.phNum);
-            Log.i("TAG", "Declare");
         String phNo=( phoneNumber.getText().toString());
-             Log.i("TAG", "ToString ph no");
         Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phNo));
-             Log.i("TAG", "call action intent");
                 //Intent in=new Intent(Intent.ACTION_CALL, Uri.parse(String.valueOf(phNo)));
         try{
-             Log.i("TAG", "starting activity");
             startActivity(intent);
-            Log.i("TAG", "end activity");
         }
 
         catch (android.content.ActivityNotFoundException ex){
